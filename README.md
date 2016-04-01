@@ -25,7 +25,7 @@ ubuntu: `sudo apt-get install rpm`.
     ```
     when succeed, a rpm package will be created in `target/rpm/RPMS/noarch/`.
 
-2. install rpm
+2. install rpm (Centos, and need root)
 
     ```
     rpm -ivh target/rpm/RPMS/noarch/kafray-1.0-1.noarch.rpm
