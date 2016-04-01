@@ -39,7 +39,7 @@ ubuntu: `sudo apt-get install rpm`.
     ```
     service kafray start/stop/status/restart
     ```
-    if seeing `"No java installations was detected."` in log file,
+    if see `"No java installations was detected."` in log file,
     add `export JAVA_HOME=/path/of/java` to service config file.
 
 4. costomize application
