@@ -19,11 +19,14 @@ For redhat: `yum install rpm`, or
 ubuntu: `sudo apt-get install rpm`.
 
 1. build rpm
+
     ```
     sbt rpm:packageBin
     ```
     when succeed, a rpm package will be created in `target/rpm/RPMS/noarch/`.
+
 2. install rpm
+
     ```
     rpm -ivh target/rpm/RPMS/noarch/kafray-1.0-1.noarch.rpm
     ```
@@ -32,8 +35,13 @@ ubuntu: `sudo apt-get install rpm`.
     service config file location: `/etc/default/kafray`
 
 3. start/stop app
+
     ```
-    service kafray start/stop/status
+    service kafray start/stop/status/restart
     ```
     if seeing `"No java installations was detected."` in log file,
     add `export JAVA_HOME=/path/of/java` to service config file.
+
+4. costomize application
+
+    enter app conf dir, edit `application.conf` and restart service.
