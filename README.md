@@ -25,7 +25,7 @@ ubuntu: `sudo apt-get install rpm`.
     when succeed, a rpm package will be created in `target/rpm/RPMS/noarch/`.
 2. install rpm
     ```
-        rpm -ivh target/rpm/RPMS/noarch/kafray-1.0-1.noarch.rpm
+    rpm -ivh target/rpm/RPMS/noarch/kafray-1.0-1.noarch.rpm
     ```
     app location: `/usr/share/kafray`,
     app config directory: `/usr/share/kafray/conf`, 
